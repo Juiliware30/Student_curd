@@ -23,7 +23,6 @@ public class student_controller
 	    @Autowired
 	SessionFactory factory;
 		
-	// {"username":"akash3","password":"akash","mobno":1234,"emailid":"hh@jk"}
 	
 	@PostMapping("savestudent")
 	public String savestudent(@RequestBody Student student)
@@ -40,7 +39,6 @@ public class student_controller
 	}
 	
 	
-	// {"username":"akash3","password":"akash","mobno":1234,"emailid":"hh@jk"}
 	
 	@PutMapping("updatestudent")
 	public String updatestudent(@RequestBody Student student)
@@ -57,7 +55,7 @@ public class student_controller
 	}
 	
 	
-	//localhost:8080/deleteUser/akash
+	
 	
 	@DeleteMapping("deletestudent/{username}")
 	public String deletestudent(@PathVariable String username)
@@ -78,7 +76,7 @@ public class student_controller
 	
 	
 		
-	// localhost:8080/getUser/akash
+	
 	
 	@GetMapping("getstudent/{username}")
 	public Student getstudent(@PathVariable String username)
